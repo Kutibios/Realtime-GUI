@@ -64,7 +64,18 @@ python tkinterapp.py
 
 ![ana](https://github.com/user-attachments/assets/72312ab9-fe23-48f6-89d7-27740803c36c)
 
+## Token Desenleri
 
+```python
+desenler = [
+    (TOKEN_TURLERI["STRING"], r'"[^"\n]*"'),
+    (TOKEN_TURLERI["SAYI"], r"\b\d+(\.\d+)?\b"),
+    (TOKEN_TURLERI["DEGISKEN"], r"\b[a-zA-Z_][a-zA-Z0-9_]*\b"),
+    (TOKEN_TURLERI["OPERATOR"], r"(==|!=|<=|>=|[+\-*/=<>])"),
+    (TOKEN_TURLERI["NOKTALAMA"], r"[{}();,]"),
+    (TOKEN_TURLERI["BOSLUK"], r"\s+")
+]
+``` 
 
 ## Hata Mesajları
 
@@ -99,15 +110,4 @@ Bu proje Levent Kutay Sezer tarafından geliştirilmiştir.
 
 Bu proje özel kullanım içindir. 
 
-## Token Desenleri
 
-```python
-desenler = [
-    (TOKEN_TURLERI["STRING"], r'"[^"\n]*"'),
-    (TOKEN_TURLERI["SAYI"], r"\b\d+(\.\d+)?\b"),
-    (TOKEN_TURLERI["DEGISKEN"], r"\b[a-zA-Z_][a-zA-Z0-9_]*\b"),
-    (TOKEN_TURLERI["OPERATOR"], r"(==|!=|<=|>=|[+\-*/=<>])"),
-    (TOKEN_TURLERI["NOKTALAMA"], r"[{}();,]"),
-    (TOKEN_TURLERI["BOSLUK"], r"\s+")
-]
-``` 
