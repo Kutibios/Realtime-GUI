@@ -50,7 +50,9 @@ print("Merhaba Dünya");
    - `lexical.py`
    - `topdown.py`
    - `tokenturleri.py`
+## 📹 Uygulama Tanıtım Videosu
 
+[Uygulama Videosunu İzlemek İçin Tıklayın](https://www.youtube.com/watch?v=60xQ5jwCgEs)
 ## Kullanım
 
 1. `tkinterapp.py` dosyasını çalıştırın:
