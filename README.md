@@ -63,6 +63,9 @@ python tkinterapp.py
 4. Token'lar ve varsa hata mesajları alt kısımda görüntülenecektir
 ![Ana Arayüz](![image](./ana.png)
 )
+![ana](https://github.com/user-attachments/assets/72312ab9-fe23-48f6-89d7-27740803c36c)
+
+
 
 ## Hata Mesajları
 
