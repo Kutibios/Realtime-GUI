@@ -61,7 +61,7 @@ python tkinterapp.py
 2. Açılan arayüzde kodunuzu yazın
 3. "ÇALIŞTIR" butonuna tıklayın
 4. Token'lar ve varsa hata mesajları alt kısımda görüntülenecektir
-![Ana Arayüz](![image](https://github.com/user-attachments/assets/61ebfe9a-80d3-4dfd-82cd-5b92883a1986)
+![Ana Arayüz](![image](./ana.png)
 )
 
 ## Hata Mesajları
