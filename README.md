@@ -1,0 +1,105 @@
+# Basit Programlama Dili Derleyicisi
+
+Bu proje, basit bir programlama dili için lexical analyzer (sözcük çözümleyici) ve parser (sözdizimi çözümleyici) içeren bir derleyici uygulamasıdır. Tkinter kullanılarak oluşturulmuş bir GUI arayüzü ile kullanıcı dostu bir deneyim sunar.
+
+## Özellikler
+
+- Basit programlama dili sözdizimi desteği
+- Gerçek zamanlı sözcük analizi
+- Sözdizimi hata kontrolü
+- Hata mesajlarında satır numarası gösterimi
+- Renkli kod vurgulama
+- Kullanıcı dostu arayüz
+
+## Desteklenen Dil Özellikleri
+
+### Veri Tipleri
+- `int`: Tam sayı değerler
+- `float`: Ondalıklı sayı değerler
+
+### Değişken Tanımlama
+```c
+int x = 5;
+float y = 3.14;
+```
+
+### Operatörler
+- Aritmetik: `+`, `-`, `*`, `/`
+- Karşılaştırma: `>`, `<`, `>=`, `<=`, `==`, `!=`
+- Atama: `=`
+
+### Kontrol Yapıları
+```c
+if (koşul) {
+    // ifade
+} else {
+    // ifade
+}
+```
+
+### Çıktı
+```c
+print("Merhaba Dünya");
+```
+
+## Kurulum
+
+1. Python 3.x'in yüklü olduğundan emin olun
+2. Gerekli dosyaları indirin:
+   - `tkinterapp.py`
+   - `lexical.py`
+   - `topdown.py`
+   - `tokenturleri.py`
+
+## Kullanım
+
+1. `tkinterapp.py` dosyasını çalıştırın:
+```bash
+python tkinterapp.py
+```
+
+2. Açılan arayüzde kodunuzu yazın
+3. "ÇALIŞTIR" butonuna tıklayın
+4. Token'lar ve varsa hata mesajları alt kısımda görüntülenecektir
+
+## Hata Mesajları
+
+Program, kodunuzdaki hataları satır numarasıyla birlikte gösterir. Örnek hata mesajları:
+
+- Eksik noktalı virgül: `HATA (Satır 1): 'x' tanımlaması sonunda ';' bekleniyordu.`
+- Eksik parantez: `HATA (Satır 3): print ifadesinde '(' eksik.`
+- Geçersiz ifade: `HATA (Satır 2): Geçersiz ifade başlangıcı: <ANAHTAR_KELIME: 'int'>`
+
+## Örnek Kod
+
+```c
+int x = 3;
+float y = 2.5;
+x = x + 5;
+if (x > 5) {
+    print("merhaba");
+} else {
+    print("naber");
+}
+```
+
+## Geliştirici
+
+Bu proje Levent Kutay Sezer tarafından geliştirilmiştir.
+
+## Lisans
+
+Bu proje özel kullanım içindir. 
+
+## Token Desenleri
+
+```python
+desenler = [
+    (TOKEN_TURLERI["STRING"], r'"[^"\n]*"'),
+    (TOKEN_TURLERI["SAYI"], r"\b\d+(\.\d+)?\b"),
+    (TOKEN_TURLERI["DEGISKEN"], r"\b[a-zA-Z_][a-zA-Z0-9_]*\b"),
+    (TOKEN_TURLERI["OPERATOR"], r"(==|!=|<=|>=|[+\-*/=<>])"),
+    (TOKEN_TURLERI["NOKTALAMA"], r"[{}();,]"),
+    (TOKEN_TURLERI["BOSLUK"], r"\s+")
+]
+``` 
