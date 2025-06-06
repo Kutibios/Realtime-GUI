@@ -61,6 +61,8 @@ python tkinterapp.py
 2. Açılan arayüzde kodunuzu yazın
 3. "ÇALIŞTIR" butonuna tıklayın
 4. Token'lar ve varsa hata mesajları alt kısımda görüntülenecektir
+![Ana Arayüz](![image](https://github.com/user-attachments/assets/61ebfe9a-80d3-4dfd-82cd-5b92883a1986)
+)
 
 ## Hata Mesajları
 
@@ -69,7 +71,8 @@ Program, kodunuzdaki hataları satır numarasıyla birlikte gösterir. Örnek ha
 - Eksik noktalı virgül: `HATA (Satır 1): 'x' tanımlaması sonunda ';' bekleniyordu.`
 - Eksik parantez: `HATA (Satır 3): print ifadesinde '(' eksik.`
 - Geçersiz ifade: `HATA (Satır 2): Geçersiz ifade başlangıcı: <ANAHTAR_KELIME: 'int'>`
-
+![Hatalı Kod](![image](https://github.com/user-attachments/assets/e0ccd3ed-13e9-47b9-be0c-0ff05182fefc)
+)
 ## Örnek Kod
 
 ```c
